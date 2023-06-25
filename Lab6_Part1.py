@@ -3,6 +3,7 @@
 # Lab 6 Part 1
 
 def word_sort(words):
+    """Sort a list of words in alphabetical order and remove duplicates."""
     word_set = set()
     
     # add items to set to remove duplicates
