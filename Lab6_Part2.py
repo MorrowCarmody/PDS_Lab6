@@ -5,16 +5,13 @@
 def char_count(sentence):
     """Count the occurrence of each letter in a string."""
     sentence = sentence.lower().replace(' ','')
-    sentence_dictionary = dict()
+    sentence_dict = dict()
 
     for letter in sentence:
-        sentence_dictionary[letter] = 0
+        sentence_dict[letter] = sentence_dict.get(letter, 0)+1
 
-    for letter in sentence:
-        sentence_dictionary[letter]+=1
-
-    for letter in sorted(sentence_dictionary):
-        print(f'{letter}:    {sentence_dictionary[letter]}')
+    for letter in sorted(sentence_dict):
+        print(f'{letter}:    {sentence_dict[letter]}')
     return
 
 char_count('This is a test sentence written by Matt')
