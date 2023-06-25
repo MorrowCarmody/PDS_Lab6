@@ -2,6 +2,12 @@
 # COSC 6375
 # Lab 6 Part 1
 
+def word_sort(words):
+    words = words.lower()
+    return
+
+word_sort('This is a test sentence written by Matt')
+
 """
 INSTRUCTIONS:
 Part 1. Duplicate Word Removal

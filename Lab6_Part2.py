@@ -2,6 +2,13 @@
 # COSC 6375
 # Lab 6 Part 2
 
+def char_count(sentence):
+    sentence = sentence.lower()
+    print(sentence)
+    return
+
+char_count('This is a test sentence written by Matt')
+
 """
 INSTRUCTIONS:
 Part 2. Character Counts
