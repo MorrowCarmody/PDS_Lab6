@@ -10,7 +10,8 @@ def word_sort(words):
     for word in words:
         word_set.add(word.lower())
 
-    # return sorted list
-    return list(sorted(word_set))
+    # print unique words in alphabetical order
+    for word in list(sorted(word_set)):
+        print(word)
 
-print(word_sort(['This','is','a','test','sentence','written','by','Matt','to','test','the','funciton']))
+word_sort(['This','is','a','test','sentence','written','by','Matt','to','test','the','funciton'])
